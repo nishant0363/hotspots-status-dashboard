@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotspot Analysis Dashboard</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-top: 10px;
+            background: white;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        th {
+            background: #333;
+            color: white;
+        }
+
+        td:hover {
+            background: #e3f2fd;
+        }
+
+        #details {
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        #map-container {
+            width: 100%;
+            height: 500px;
+            margin-bottom: 20px;
+        }
+
+        #map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>📊 Hotspot Analysis Dashboard</h1>
+<h2>🗺️ Bangalore Demand Map</h2>
+
+<div id="map-container">
+    <iframe src="map.html"></iframe>
+</div>
+<h2>1️⃣ Demand vs Idle Category Matrix</h2>
+<div id="matrix"></div>
+
+<h2>2️⃣ Aggregated Yes/No Table</h2>
+<div id="binary"></div>
+
+<div id="details" class="card">
+    <h2>🔍 Selected Data</h2>
+    <table id="detailTable"></table>
+</div>
+
+<script>
+
+let fullData = [];
+
+const categories = ["Yes", "Moderate", "Sparse", "No"];
+
+// ------------------------------
+// LOAD CSV
+// ------------------------------
+Papa.parse("hotspot_analysis_updated.csv", {
+    download: true,
+    header: true,
+    complete: function(results) {
+        fullData = results.data;
+        buildMatrix();
+        buildBinary();
+    }
+});
+
+// ------------------------------
+// MATRIX TABLE
+// ------------------------------
+function buildMatrix() {
+
+    let table = "<table><tr><th>Demand \\ Idle</th>";
+
+    categories.forEach(c => table += `<th>${c}</th>`);
+    table += "<th>Total</th></tr>";
+
+    categories.forEach(demand => {
+
+        table += `<tr><th>${demand}</th>`;
+        let rowTotal = 0;
+
+        categories.forEach(idle => {
+
+            let subset = fullData.filter(d =>
+                d["Demand category"] === demand &&
+                d["Idle category"] === idle
+            );
+
+            let count = subset.length;
+            rowTotal += count;
+
+            table += `<td onclick="showData('${demand}','${idle}')">${count}</td>`;
+        });
+
+        table += `<td>${rowTotal}</td></tr>`;
+    });
+
+    // column total
+    table += "<tr><th>Total</th>";
+
+    categories.forEach(idle => {
+        let colTotal = fullData.filter(d => d["Idle category"] === idle).length;
+        table += `<td>${colTotal}</td>`;
+    });
+
+    table += `<td>${fullData.length}</td></tr>`;
+    table += "</table>";
+
+    document.getElementById("matrix").innerHTML = table;
+}
+
+// ------------------------------
+// BINARY TABLE
+// ------------------------------
+function buildBinary() {
+
+    function isYes(x) {
+        return x === "Yes";
+    }
+
+    let yesYes = fullData.filter(d => isYes(d["Demand category"]) && isYes(d["Idle category"]));
+    let yesNo = fullData.filter(d => isYes(d["Demand category"]) && !isYes(d["Idle category"]));
+    let noYes = fullData.filter(d => !isYes(d["Demand category"]) && isYes(d["Idle category"]));
+    let noNo = fullData.filter(d => !isYes(d["Demand category"]) && !isYes(d["Idle category"]));
+
+    let table = `
+        <table>
+            <tr>
+                <th></th>
+                <th>Idle YES</th>
+                <th>Idle NO</th>
+            </tr>
+
+            <tr>
+                <th>Demand YES</th>
+                <td onclick="showBinary('yy')">${yesYes.length}</td>
+                <td onclick="showBinary('yn')">${yesNo.length}</td>
+            </tr>
+
+            <tr>
+                <th>Demand NO</th>
+                <td onclick="showBinary('ny')">${noYes.length}</td>
+                <td onclick="showBinary('nn')">${noNo.length}</td>
+            </tr>
+        </table>
+    `;
+
+    document.getElementById("binary").innerHTML = table;
+}
+
+// ------------------------------
+// SHOW DATA (MATRIX)
+// ------------------------------
+function showData(demand, idle) {
+
+    let subset = fullData.filter(d =>
+        d["Demand category"] === demand &&
+        d["Idle category"] === idle
+    );
+
+    renderTable(subset);
+}
+
+// ------------------------------
+// SHOW DATA (BINARY)
+// ------------------------------
+function showBinary(type) {
+
+    function isYes(x) {
+        return x === "Yes";
+    }
+
+    let subset = [];
+
+    if (type === "yy") subset = fullData.filter(d => isYes(d["Demand category"]) && isYes(d["Idle category"]));
+    if (type === "yn") subset = fullData.filter(d => isYes(d["Demand category"]) && !isYes(d["Idle category"]));
+    if (type === "ny") subset = fullData.filter(d => !isYes(d["Demand category"]) && isYes(d["Idle category"]));
+    if (type === "nn") subset = fullData.filter(d => !isYes(d["Demand category"]) && !isYes(d["Idle category"]));
+
+    renderTable(subset);
+}
+
+// ------------------------------
+// RENDER DETAIL TABLE
+// ------------------------------
+function renderTable(data) {
+
+    if (data.length === 0) {
+        document.getElementById("detailTable").innerHTML = "<tr><td>No Data</td></tr>";
+        return;
+    }
+
+    let keys = Object.keys(data[0]);
+
+    let table = "<tr>";
+    keys.forEach(k => table += `<th>${k}</th>`);
+    table += "</tr>";
+
+    data.forEach(row => {
+        table += "<tr>";
+        keys.forEach(k => table += `<td>${row[k]}</td>`);
+        table += "</tr>";
+    });
+
+    document.getElementById("detailTable").innerHTML = table;
+}
+
+</script>
+
+</body>
+</html>
