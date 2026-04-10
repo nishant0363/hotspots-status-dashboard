@@ -63,11 +63,11 @@
         }
         .card0 {
             background: white;
-            width: 60%;
+            width: 70%;
             padding: 10px;
             border-radius: 8px;
             margin-bottom: 20px;
-            max-height: 265px;
+            max-height: 285px;
         }
 
         .card2 {
@@ -303,11 +303,23 @@ function isYes(x) {
 
 function buildBinary() {
 
+    function isYes(x) {
+        return x === "Yes" || x === "Moderate";
+    }
+
     binarySubsets = {
         yy: filteredData.filter(d => isYes(d["Demand category"]) && isYes(d["Idle category"])),
         yn: filteredData.filter(d => isYes(d["Demand category"]) && !isYes(d["Idle category"])),
         ny: filteredData.filter(d => !isYes(d["Demand category"]) && isYes(d["Idle category"])),
-        nn: filteredData.filter(d => !isYes(d["Demand category"]) && !isYes(d["Idle category"]))
+        nn: filteredData.filter(d => !isYes(d["Demand category"]) && !isYes(d["Idle category"])),
+
+        row_yes: filteredData.filter(d => isYes(d["Demand category"])),
+        row_no: filteredData.filter(d => !isYes(d["Demand category"])),
+
+        col_yes: filteredData.filter(d => isYes(d["Idle category"])),
+        col_no: filteredData.filter(d => !isYes(d["Idle category"])),
+
+        all: filteredData
     };
 
     let yy = binarySubsets.yy.length;
@@ -322,31 +334,38 @@ function buildBinary() {
 
     let table = `
         <table>
-            <tr><th></th><th>Idle Supply YES</th><th>Idle Supply NO</th><th>Total</th></tr>
+            <tr>
+                <th></th>
+                <th>Idle Supply YES</th>
+                <th>Idle Supply NO</th>
+                <th>Total</th>
+            </tr>
+
             <tr>
                 <th>Demand YES</th>
                 <td onclick="showBinary('yy')">${yy}</td>
                 <td onclick="showBinary('yn')">${yn}</td>
-                <td><b>${rowYes}</b></td>
+                <td onclick="showBinary('row_yes')"><b>${rowYes}</b></td>
             </tr>
+
             <tr>
                 <th>Demand NO</th>
                 <td onclick="showBinary('ny')">${ny}</td>
                 <td onclick="showBinary('nn')">${nn}</td>
-                <td><b>${rowNo}</b></td>
+                <td onclick="showBinary('row_no')"><b>${rowNo}</b></td>
             </tr>
+
             <tr>
                 <th>Total</th>
-                <td><b>${colYes}</b></td>
-                <td><b>${colNo}</b></td>
-                <td><b>${rowYes + rowNo}</b></td>
+                <td onclick="showBinary('col_yes')"><b>${colYes}</b></td>
+                <td onclick="showBinary('col_no')"><b>${colNo}</b></td>
+                <td onclick="showBinary('all')"><b>${rowYes + rowNo}</b></td>
             </tr>
         </table>
     `;
 
     document.getElementById("binary").innerHTML = table;
 }
-
 function showBinary(key) {
     renderTable(binarySubsets[key] || []);
 }
