@@ -1,216 +1,216 @@
-nano_market,cluster,hotspot_name,latitude,longitude,Demand near hotspot,Idle near hotspot,Demand near hotspot (Y/N),Idle near hotspot (Y/N),Demand category,Idle category,Avg idle time near hotspot
-mantri webcity,thannisandra,webcity,13.07119,77.64745,0,0,No,No,No,No,0.0
-jindal city,nagasandra,chikkabidarakallu metro,13.05256,77.48794,158,176,Yes,Yes,Yes,Yes,1.05
-thimmasandra gardens,bagaluru prod test,bagalur bamboo forest,13.11479,77.72305,0,0,No,No,No,No,0.0
-7th block,koramangala,7th block devi park,12.93707,77.61852,32,26,Yes,Yes,No,Moderate,1.12
-dnr atmosphere,whitefield 3,dnr atmosphere,12.96143,77.74205,141,41,Yes,Yes,Moderate,Yes,1.0
-cosmopolis,whitefield 3,cosmopolis,12.96282,77.74812,87,56,Yes,Yes,Moderate,Yes,1.21
-shanthi garden,segehalli,shanthi ds max,13.00715,77.76275,181,26,Yes,Yes,Yes,Moderate,1.0
-hope farm jn.,whitefield 2,hope farm jn.,12.98236,77.75791,88,51,Yes,Yes,Moderate,Yes,1.12
-mhyna heights,varthur,habitat greens,12.92984,77.73997,131,431,Yes,Yes,Moderate,Yes,1.74
-manipal county,singasandra,manipal county road,12.87382,77.64271,72,84,Yes,Yes,Sparse,Yes,1.01
-spectra amrutha,whitefield 3,amruth dan layout,12.96343,77.73315,182,31,Yes,Yes,Yes,Moderate,0.97
-siddapura,sarjapur,siddapura thomas layout,12.90047,77.70286,136,27,Yes,Yes,Moderate,Moderate,1.04
-arekera,hulimavu,mahindra windchimes,12.8874,77.59709,44,15,Yes,Yes,Sparse,Moderate,1.0
-suncity gloria,sarjapur,suncity gloria gate,12.90271,77.70679,107,47,Yes,Yes,Moderate,Yes,1.11
-devarabisanahalli,devarabisanahalli,devarabisanahalli,12.9247668,77.6948782,48,5,Yes,Yes,Sparse,Sparse,1.0
-amblipura trinity,sarjapur,trinity hs2,12.91546,77.6699,75,2,Yes,Yes,Moderate,No,1.0
-genesis apartments,bellandur,genesis apartments hs,12.922566,77.663933,41,123,Yes,Yes,Sparse,Yes,1.08
-fountain square,munnekollal,fountain cult gym,12.95667,77.70893,55,138,Yes,Yes,Sparse,Yes,0.99
-embassy pristine,bellandur,embassy pristine hs,12.92662,77.66275,80,7,Yes,Yes,Moderate,Sparse,1.0
-sobha jasmine,bellandur,sobha jasmine hs,12.927212,77.669396,201,17,Yes,Yes,Yes,Moderate,1.0
-thubarahalli,munnekollal,thubarahalli brentwood,12.95053,77.71758,177,74,Yes,Yes,Yes,Yes,0.95
-itpl hoodi,hoodi,hoodi metro station,12.98897,77.71255,76,11,Yes,Yes,Moderate,Sparse,1.0
-green house layout,electronic city 1,green house layout hs1,12.85222,77.6491,32,51,Yes,Yes,No,Yes,1.14
-puspha forest,bagaluru prod test,bda,12.9133788,77.6381169,1,0,Yes,No,No,No,0.0
-4th block koramangala,koramangala,4th block koramangala hs,12.93244,77.62882,53,6,Yes,Yes,Sparse,Sparse,0.83
-prestige garden bay,yelahanka,vaishnavi serene,13.12545,77.56824,0,9,No,Yes,No,Sparse,1.0
-greenage juniper,hongasandra,greenage gate,12.90254,77.63117,132,48,Yes,Yes,Moderate,Yes,0.96
-panathur,varthur,panathur hs1,12.9359,77.71022,37,21,Yes,Yes,No,Moderate,1.0
-prestige kew gardens,marathahalli,kew hs,12.94568,77.67671,271,14,Yes,Yes,Yes,Sparse,1.14
-godrej e-city,electronic city 1,godrej e-city hs,12.84853,77.65278,54,42,Yes,Yes,Sparse,Yes,1.0
-parkway homes,rayasandra,parkway homes hs,12.86841,77.68659,72,82,Yes,Yes,Sparse,Yes,1.02
-avantika gardens,bagaluru prod test,urbanvault hsr,12.9184962,77.6451342,24,2,Yes,Yes,No,No,1.0
-owners court 1,sarjapur,court1 play arena,12.91157,77.67662,78,49,Yes,Yes,Moderate,Yes,0.98
-concorde midway,singasandra,concorde midway city,12.86629,77.65186,27,18,Yes,Yes,No,Moderate,1.06
-diamond district,indiranagar,diamond district,12.96038,77.64143,35,38,Yes,Yes,No,Moderate,1.0
-sai meadows kudlu,kudlu,sai meadows kudlu,12.88523,77.6522,64,25,Yes,Yes,Sparse,Moderate,1.24
-orchid lakeview,bellandur,orchid lakeview hs,12.93107,77.67578,27,8,Yes,Yes,No,Sparse,1.0
-iti layout kudlu,kudlu,iti layout kudlu,12.90047,77.64161,168,108,Yes,Yes,Yes,Yes,1.0
-divaysree 77,marathahalli,divyasree 77 hs,12.94855,77.69239,58,10,Yes,Yes,Sparse,Sparse,2.7
-btr garden kudlu,kudlu,btr garden kudlu,12.88954,77.64847,108,72,Yes,Yes,Moderate,Yes,1.39
-sector 4 hsr,hsr,sector 4 park,12.91482,77.64226,2,0,Yes,No,No,No,0.0
-sumadhura eden gardens,segehalli,sumadhura aspire aurum,13.02798,77.74977,131,38,Yes,Yes,Moderate,Moderate,2.21
-chinappa layout,varthur,chinappa layout hs,12.93854,77.74488,22,10,Yes,Yes,No,Sparse,1.3
-kudlu road,hsr,kudlu,12.89423,77.65081,22,5,Yes,Yes,No,Sparse,1.0
-garudacharpalya,mahadevapura,garudacharpalya metro,12.9934,77.70316,29,45,Yes,Yes,No,Yes,1.0
-mana capitol,sarjapur,mana capitol,12.900477467293431,77.70315795691867,144,26,Yes,Yes,Moderate,Moderate,1.04
-sobha dream gardens,thannisandra,raga town,13.09682,77.64745,0,0,No,No,No,No,0.0
-godrej avenues,yelahanka,godrej avenues hs,13.14592,77.56967,111,33,Yes,Yes,Moderate,Moderate,2.58
-sector 6 hsr,hsr,sector 6 hsr 9th main rd,12.91472,77.63519,2,0,Yes,No,No,No,0.0
-sector 7 hsr,hsr,sector 7 serenity hsr,12.90705,77.63252,42,17,Yes,Yes,Sparse,Moderate,1.0
-ajmera infinity,electronic city 1,concorde manhattan,12.84006,77.64989,179,58,Yes,Yes,Yes,Yes,1.0
-sjr/bren/owners court new,sarjapur,chaai restro,12.900333002818511,77.67553579999999,184,32,Yes,Yes,Yes,Moderate,0.97
-owners court 3,sarjapur,court3 grr serenity,12.90479,77.6789,153,7,Yes,Yes,Yes,Sparse,0.71
-gopalan aqua,whitefield 2,gopalan springdale road,12.97656,77.75748,122,52,Yes,Yes,Moderate,Yes,1.04
-victorian view,whitefield 1,borewell road,12.96911,77.73972,194,75,Yes,Yes,Yes,Yes,0.97
-doddanekkundi,mahadevapura,doddanekkudi durga petals,12.97446,77.69808,0,0,No,No,No,No,0.0
-1st block koramangala,koramangala,1st block hs1,12.92951,77.6334,48,36,Yes,Yes,Sparse,Moderate,1.28
-purvi symphony,varthur,purvi symphony hs,12.92173,77.73665,220,66,Yes,Yes,Yes,Yes,1.02
-green life,varthur,green life,12.92556,77.72805,65,17,Yes,Yes,Sparse,Moderate,1.0
-prakruthi solitaire,electronic city 2,prakruthi vishal mega mart,12.83552,77.69155,32,21,Yes,Yes,No,Moderate,1.0
-prestige nexus shantiniketan,hoodi,prestige shantiniketan hs,12.98914,77.72692,12,53,Yes,Yes,No,Yes,0.98
-purva westend,kudlu,westend kudlu metro station,12.88991,77.63883,225,30,Yes,Yes,Yes,Moderate,0.97
-prestige sunrise,electronic city 1,neotown rd,12.8343,77.66416,170,82,Yes,Yes,Yes,Yes,1.76
-krishna layout,hulimavu,begur hulimavu rd,12.87725,77.60407,0,0,No,No,No,No,0.0
-infinite city,electronic city 1,cattery homes,12.81836,77.66534,148,49,Yes,Yes,Moderate,Yes,1.04
-kannamangala,segehalli,kannamangala,13.01945,77.76232,178,80,Yes,Yes,Yes,Yes,1.08
-100 feet road,indiranagar,100 feet bbmp park,12.96833,77.63855,19,1,Yes,Yes,No,No,1.0
-astro maison,sarjapur,astro mantri premero,12.90765,77.69375,0,0,No,No,No,No,0.0
-nyanappanahalli,hulimavu,paramount shravanthi,12.88004,77.61601,52,44,Yes,Yes,Sparse,Yes,1.09
-snn raj grandeur,hongasandra,snn raj grandeur hs,12.90017,77.62246,99,86,Yes,Yes,Moderate,Yes,1.07
-house of hiranandani,hulimavu,hiranandani gate,12.87633,77.61165,30,11,Yes,Yes,No,Sparse,1.0
-song of south,tejaswini nagar,begur koppa road,12.86112,77.61326,31,27,Yes,Yes,No,Moderate,1.19
-govinda palya,electronic city 2,govindapalya bmtc depot,12.84665,77.67257,0,7,No,Yes,No,Sparse,1.14
-salarpuria new 1,sarjapur,keerthi regalia,12.91053,77.68496,172,57,Yes,Yes,Yes,Yes,1.0
-godrej tumkur,nagasandra,14th avenue,13.05002,77.48938,1,1,Yes,Yes,No,No,1.0
-windgates,hennur,clover apt.,13.03206,77.65076,0,0,No,No,No,No,0.0
-jain heights,hennur,jain height,13.03278,77.6374,0,0,No,No,No,No,0.0
-sattva opus,yeswanthpur,sattva opus hs1,13.04432,77.50898,31,124,Yes,Yes,No,Yes,1.08
-shriram summit,electronic city 1,sipani hs,12.83972,77.66912,63,4,Yes,Yes,Sparse,No,1.0
-6th block,koramangala,6th block play ground,12.94093,77.62071,57,9,Yes,Yes,Sparse,Sparse,1.0
-santorini sobha city,thannisandra,sobha city road,13.07724,77.637,0,0,No,No,No,No,0.0
-mico layout,hulimavu,1st main,12.88794,77.59171,34,17,Yes,Yes,No,Moderate,0.88
-rainbow residency,sarjapur,dsr woodwinds new,12.90973,77.68735,107,30,Yes,Yes,Moderate,Moderate,1.4
-pfr new,sarjapur,kpn fresh,12.897864,77.658318,62,3,Yes,Yes,Sparse,No,4.67
-ncc nagarjuna woods,bellandur,pembrookhs1,12.9384005,77.6988346,126,12,Yes,Yes,Moderate,Sparse,1.0
-ironhill,marathahalli,ironhill hs,12.95428,77.69805,0,0,No,No,No,No,0.0
-bellandur railway,bellandur,bellandur railway hs,12.93733,77.70214,108,8,Yes,Yes,Moderate,Sparse,1.25
-siroya environ,hebbal,siroya environ park,13.03401,77.59411,28,72,Yes,Yes,No,Yes,2.21
-salarpuria new 2,sarjapur,salarpuria new hood,12.91334,77.67724,55,107,Yes,Yes,Sparse,Yes,0.98
-amblipura springfields,sarjapur,springfields hs1,12.91891,77.67292,109,14,Yes,Yes,Moderate,Sparse,1.0
-platinum city,yeswanthpur,watch factory road,13.03451,77.53445,24,322,Yes,Yes,No,Yes,1.36
-vanshee richfields,marathahalli,10th cross,12.957,77.69794,15,10,Yes,Yes,No,Sparse,1.0
-nikoo homes,thannisandra,nikoo hs2,13.08088,77.64143,154,19,Yes,Yes,Yes,Moderate,1.0
-sjr fiesta homes,electronic city 2,sjr fiesta1st main rd,12.85878,77.67433,59,22,Yes,Yes,Sparse,Moderate,1.27
-purva skydale,sarjapur,purva towers,12.89345,77.66178,159,10,Yes,Yes,Yes,Sparse,0.9
-sls signature,bellandur,sls signature hs,12.9335,77.70095,172,7,Yes,Yes,Yes,Sparse,1.14
-subhodaya laurus,segehalli,subhodaya sai ashrayadham,13.00677,77.75241,113,21,Yes,Yes,Moderate,Moderate,0.9
-prestige ivy terraces,bellandur,prestige ivy terraces,12.93426,77.69823,215,11,Yes,Yes,Yes,Sparse,1.09
-prestige elysian,hulimavu,ajmera green acres,12.86822,77.5927,22,11,Yes,Yes,No,Sparse,0.91
-prestige park square,tejaswini nagar,pps park,12.84552,77.588,0,26,No,Yes,No,Moderate,7.54
-sls sapphire,bellandur,sls sapphire hs,12.93419,77.70351,273,117,Yes,Yes,Yes,Yes,1.03
-pnr felicity kudlu,kudlu,pnr kudlu royal placid,12.9006,77.65544,71,8,Yes,Yes,Sparse,Sparse,1.0
-brookefield grand view,brookefield,grandview nisarga park,12.96203,77.70958,31,19,Yes,Yes,No,Moderate,1.0
-sobha dream acres,varthur,sobha dream gate hs2,12.93936,77.71939,141,502,Yes,Yes,Moderate,Yes,1.1
-eshwara layout,indiranagar,eshwara cmh park,12.97763,77.64133,18,18,Yes,Yes,No,Moderate,1.0
-sobha silicon oasis,electronic city 2,sobha silicon oasis hs,12.86783,77.66264,16,132,Yes,Yes,No,Yes,1.05
-adarsh palm north,bellandur,aprh2,12.9175507,77.6906537,181,8,Yes,Yes,Yes,Sparse,1.12
-renaissance temple bells,mahalakshmi,renaissance temple bells,13.01391,77.54943,2,12,Yes,Yes,No,Sparse,3.5
-shriram white house,hebbal,malgudi park,13.02313,77.59611,55,22,Yes,Yes,Sparse,Moderate,0.95
-sakra hospital,bellandur,sakra hospital,12.93257,77.683,20,10,Yes,Yes,No,Sparse,1.0
-koralur,whitefield 2,koralur slv ratnagiri,12.98017,77.769,49,5,Yes,Yes,Sparse,Sparse,1.6
-siroya sunshine,hebbal,14th cross main road,13.0292,77.60741,10,3,Yes,Yes,No,No,1.0
-brookfield millennium,brookefield,millennium brookefield2,12.9634518,77.7158968,69,7,Yes,Yes,Sparse,Sparse,1.0
-st johns woods,koramangala,st johns woods hs,12.93005,77.60966,0,0,No,No,No,No,0.0
-silver oak,whitefield 1,shell rd,12.98241,77.75028,8,0,Yes,No,No,No,0.0
-golden grand,yeswanthpur,golden grand,13.02597,77.54801,167,206,Yes,Yes,Yes,Yes,1.07
-nagondanahalli,whitefield 2,nagondanahalli cascade garden,12.97428,77.76312,68,15,Yes,Yes,Sparse,Moderate,1.0
-hamilton homes,rayasandra,ishta yoga,12.86428,77.69759,0,0,No,No,No,No,0.0
-keya spring,hulimavu,family park,12.88299,77.60355,0,0,No,No,No,No,0.0
-sobha dreams acres 2,varthur,sobha dreams hs1,12.93711,77.72597,362,208,Yes,Yes,Yes,Yes,1.22
-sector 1 hsr,hsr,sector 1hsr big banyan tree,12.91287,77.64916,25,2,Yes,Yes,No,No,1.5
-sobha amethyst,segehalli,sobha amethyst admus,13.02959,77.76269,4,0,Yes,No,No,No,0.0
-vaishnavi gardenia,yeswanthpur,trends,13.04252,77.52004,87,107,Yes,Yes,Moderate,Yes,1.24
-sobha ruby platinum,nagasandra,nagasandra metro,13.04727,77.50038,86,662,Yes,Yes,Moderate,Yes,1.18
-sector 2 hsr,hsr,sector 2 hsr,12.90747,77.64697,45,58,Yes,Yes,Sparse,Yes,0.98
-akme ballet,mahadevapura,akme ballet rd,12.979,77.69497,22,146,Yes,Yes,No,Yes,1.08
-brigade gateway,mahalakshmi,brigade gateway aslam,13.00966,77.55433,13,11,Yes,Yes,No,Sparse,1.0
-foyer infinity,whitefield 1,ecc rd,12.97545,77.74321,141,92,Yes,Yes,Moderate,Yes,1.2
-republic of whitefield,brookefield,republic of whitefield,12.96672,77.72462,0,0,No,No,No,No,0.0
-putamma layout,whitefield 3,putamma parshuram road,12.96691,77.76156,2,1,Yes,Yes,No,No,1.0
-white meadows,whitefield 2,white ayanna rd meadows,12.98057,77.75769,87,27,Yes,Yes,Moderate,Moderate,1.22
-adarsh palm towers,bellandur,adarsh kids kingdom rd,12.91919,77.68393,97,7,Yes,Yes,Moderate,Sparse,1.0
-adarsh palm south,bellandur,adarsh palm south,12.91842,77.69207,114,7,Yes,Yes,Moderate,Sparse,0.86
-prestige silversun,bellandur,prestige silversun,12.92403,77.69509,59,5,Yes,Yes,Sparse,Sparse,1.0
-ecolife,varthur,ecolife gunjur road,12.93886,77.73093,179,123,Yes,Yes,Yes,Yes,1.56
-brigade utopia,varthur,utopia vishal mart,12.93448,77.74367,81,94,Yes,Yes,Moderate,Yes,1.29
-canduer signature,varthur,utopia candeur signature,12.93088,77.74221,234,119,Yes,Yes,Yes,Yes,1.1
-smondoville,electronic city 1,smondo 2,12.82,77.66,163,30,Yes,Yes,Yes,Moderate,2.2
-pfr towers,sarjapur,pfr towers gate,12.89826,77.66743,100,10,Yes,Yes,Moderate,Sparse,1.0
-mvr pride,varthur,ecolife mvr pride road,12.93423,77.73042,23,78,Yes,Yes,No,Yes,1.14
-owners court 2,sarjapur,owners court 2 hs2,12.90202,77.6701,185,19,Yes,Yes,Yes,Moderate,1.05
-prestige lakeside habitat,varthur,prestige gate plh,12.92895965085842,77.73985966854721,78,419,Yes,Yes,Moderate,Yes,1.76
-mynha meadows,varthur,mynha meadows hs,12.92343,77.736,74,15,Yes,Yes,Sparse,Moderate,1.07
-shanthi garden,segehalli,shanthi hs,13.0104,77.75922,28,7,Yes,Yes,No,Sparse,1.0
-amblipura trinity,sarjapur,khatey petay,12.91647,77.67328,165,93,Yes,Yes,Yes,Yes,1.78
-genesis apartments,bellandur,suncitylane peri bake house,12.92652,77.662408,72,6,Yes,Yes,Sparse,Sparse,1.0
-itpl hoodi,hoodi,itpl hoodi,12.99238,77.71574,85,19,Yes,Yes,Moderate,Moderate,0.95
-avantika gardens,bagaluru prod test,bagalur bamboo,13.10417,77.6877,5,0,Yes,No,No,No,0.0
-owners court 1,sarjapur,owners coart 1 hs1,12.90728,77.67573,150,47,Yes,Yes,Yes,Yes,0.98
-concorde midway,singasandra,concorde krishna mystiq,12.86492,77.65483,65,26,Yes,Yes,Sparse,Moderate,1.04
-sector 4 hsr,hsr,sector 4 hsr tree park,12.91038,77.64012,3,0,Yes,No,No,No,0.0
-mana capitol,sarjapur,mana uber verdant,12.9059,77.69728,57,20,Yes,Yes,Sparse,Moderate,1.0
-sobha dream gardens,thannisandra,sobha entrance,13.09926,77.64186,0,0,No,No,No,No,0.0
-sector 6 hsr,hsr,sector 6 hsr jagrati udyana,12.91524,77.63005,7,0,Yes,No,No,No,0.0
-ajmera infinity,electronic city 1,ajmera infinity hs1,12.84175,77.64779,302,184,Yes,Yes,Yes,Yes,1.3
-sjr/bren/owners court new,sarjapur,bren edge waters,12.90197,77.67014,185,19,Yes,Yes,Yes,Moderate,1.05
-owners court 3,sarjapur,owners court 3 hs1,12.90244,77.67605,134,24,Yes,Yes,Moderate,Moderate,1.0
-prakruthi solitaire,electronic city 2,prakruthi solitaire,12.83671,77.6947,27,8,Yes,Yes,No,Sparse,2.0
-prestige sunrise,electronic city 1,shriram summit hs1,12.83554,77.66617,135,90,Yes,Yes,Moderate,Yes,1.74
-100 feet road,indiranagar,100 feet nandana palace,12.9622,77.64192,25,22,Yes,Yes,No,Moderate,1.0
-astro maison,sarjapur,astro apurva elite,12.90651,77.69048,0,3,No,Yes,No,No,1.0
-house of hiranandani,hulimavu,ds max road,12.87537,77.61694,112,30,Yes,Yes,Moderate,Moderate,1.03
-govinda palya,electronic city 2,govinda palya ec 2,12.85158,77.67632,4,19,Yes,Yes,No,Moderate,1.0
-salarpuria new 1,sarjapur,veeru apartments,12.91087,77.68092,204,27,Yes,Yes,Yes,Moderate,0.96
-shriram summit,electronic city 1,gesture alta vista,12.83862,77.67394,12,24,Yes,Yes,No,Moderate,1.04
-rainbow residency,sarjapur,augusta grand,12.90873,77.69037,16,5,Yes,Yes,No,Sparse,1.0
-pfr new,sarjapur,ozone evergreens,12.90968,77.66344,69,23,Yes,Yes,Sparse,Moderate,1.0
-ncc nagarjuna woods,bellandur,ncc nagarjuna woods,12.93864,77.69396,92,77,Yes,Yes,Moderate,Yes,1.04
-salarpuria new 2,sarjapur,sattva salarpuria,12.91116,77.68301,250,48,Yes,Yes,Yes,Yes,1.06
-amblipura springfields,sarjapur,dnr arista,12.92265,77.67457,86,38,Yes,Yes,Moderate,Moderate,1.05
-vanshee richfields,marathahalli,vanshee richfields,12.9599,77.70129,33,97,Yes,Yes,No,Yes,1.02
-nikoo homes,thannisandra,nikoo hs 1,13.08469,77.64414,271,27,Yes,Yes,Yes,Moderate,1.04
-purva skydale,sarjapur,nd passion,12.89356,77.65789,123,19,Yes,Yes,Moderate,Moderate,1.0
-subhodaya laurus,segehalli,subhodaya keerthi residency,13.00754,77.75738,32,9,Yes,Yes,No,Sparse,1.0
-prestige elysian,hulimavu,prestige elysian hs,12.87322,77.59404,26,60,Yes,Yes,No,Yes,0.98
-pnr felicity kudlu,kudlu,pnr kudlu,12.89648,77.65392,41,7,Yes,Yes,Sparse,Sparse,1.14
-eshwara layout,indiranagar,eshwara indra nagar kfc,12.97936,77.63622,16,20,Yes,Yes,No,Moderate,1.2
-adarsh palm north,bellandur,adarsh palm north,12.92079,77.69598,144,41,Yes,Yes,Moderate,Yes,1.0
-koralur,whitefield 2,koralur hs1,12.98408,77.77325,73,56,Yes,Yes,Sparse,Yes,1.02
-brookfield millennium,brookefield,millennium water tank park,12.9667,77.71573,67,8,Yes,Yes,Sparse,Sparse,1.62
-silver oak,whitefield 1,silver oak,12.98213,77.74388,144,20,Yes,Yes,Moderate,Moderate,1.15
-golden grand,yeswanthpur,taj yeshwantpur,13.02767,77.54775,93,92,Yes,Yes,Moderate,Yes,1.08
-nagondanahalli,whitefield 2,nagondanahalli mangolia aprt,12.97382,77.76692,106,5,Yes,Yes,Moderate,Sparse,1.0
-hamilton homes,rayasandra,nirmala vidyalaya rd,12.8677,77.69565,0,0,No,No,No,No,0.0
-sector 1 hsr,hsr,1st sector hsr,12.917666643890719,77.65073286720182,25,16,Yes,Yes,No,Moderate,1.0
-vaishnavi gardenia,yeswanthpur,gardenia pipe line park,13.04713,77.52033,2,22,Yes,Yes,No,Moderate,1.14
-foyer infinity,whitefield 1,lennar edifice,12.97782,77.73728,73,11,Yes,Yes,Sparse,Sparse,1.18
-white meadows,whitefield 2,prestige white meadows,12.97455,77.75098,17,8,Yes,Yes,No,Sparse,1.0
-adarsh palm towers,bellandur,adarsh palm towers,12.91704,77.68928,147,4,Yes,Yes,Moderate,No,1.0
-ecolife,varthur,balagerehs1,12.937111,77.725972,362,209,Yes,Yes,Yes,Yes,1.22
-smondoville,electronic city 1,smondoville road,12.82202,77.65786,244,85,Yes,Yes,Yes,Yes,1.09
-pfr towers,sarjapur,pfr towers hs2,12.90373,77.66214,96,51,Yes,Yes,Moderate,Yes,1.08
-owners court 2,sarjapur,owners coart 2 hs1,12.89893,77.67496,155,34,Yes,Yes,Yes,Moderate,0.97
-prestige lakeside habitat,varthur,prestige lakeside habitat,12.93155,77.74127,35,179,Yes,Yes,No,Yes,1.13
-amblipura trinity,sarjapur,trinity skyline,12.91985,77.66639,39,5,Yes,Yes,No,Sparse,1.0
-mana capitol,sarjapur,mana capitol dmart vrr fortuna,12.90448,77.70452,93,24,Yes,Yes,Moderate,Moderate,1.0
-sector 6 hsr,hsr,sector 6 hsr bda park,12.91252,77.63061,7,0,Yes,No,No,No,0.0
-sjr/bren/owners court new,sarjapur,purva skywood,12.908295,77.675728,131,42,Yes,Yes,Moderate,Yes,1.02
-prestige sunrise,electronic city 1,milan ground,12.83022,77.66395,78,27,Yes,Yes,Moderate,Moderate,0.85
-salarpuria new 1,sarjapur,sunshine salarpuria,12.91443,77.67687,131,97,Yes,Yes,Moderate,Yes,0.99
-shriram summit,electronic city 1,veerasandra road,12.83589,77.67004,94,13,Yes,Yes,Moderate,Sparse,1.0
-rainbow residency,sarjapur,rainbow junnasadra,12.90842,77.68366,91,42,Yes,Yes,Moderate,Yes,1.07
-pfr new,sarjapur,purva,12.89338,77.66177,160,10,Yes,Yes,Yes,Sparse,0.9
-salarpuria new 2,sarjapur,sattva signet,12.90893,77.68046,160,22,Yes,Yes,Yes,Moderate,0.91
-amblipura springfields,sarjapur,akme harmony,12.92172,77.67175,55,4,Yes,Yes,Sparse,No,3.0
-purva skydale,sarjapur,lake side park,12.89771,77.6614,34,3,Yes,Yes,No,No,1.0
-brookfield millennium,brookefield,millennium aecs layout,12.969394,77.711779,44,113,Yes,Yes,Sparse,Yes,1.31
-hamilton homes,rayasandra,rayasandra main rd,12.86742,77.69095,0,5,No,Yes,No,Sparse,1.0
-ecolife,varthur,ecolife balagere,12.937963,77.728752,123,77,Yes,Yes,Moderate,Yes,1.25
-owners court 2,sarjapur,century craft,12.89645,77.67806,128,6,Yes,Yes,Moderate,Sparse,2.17
-amblipura trinity,sarjapur,trinity sjr redwoods,12.91477,77.66707,19,1,Yes,Yes,No,No,1.0
-sjr/bren/owners court new,sarjapur,oceanus monarda`,12.90726,77.67572,149,47,Yes,Yes,Moderate,Yes,0.98
-pfr new,sarjapur,pariwar,12.898,77.66726,100,11,Yes,Yes,Moderate,Sparse,1.0
-pfr new,sarjapur,shriram woods,12.90874,77.66843,87,11,Yes,Yes,Moderate,Sparse,1.0
-pfr new,sarjapur,prestige,12.90358,77.66278,150,54,Yes,Yes,Yes,Yes,1.07
+cluster,nano_market,hotspot_name,latitude,longitude,Demand near hotspot,Idle near hotspot,Avg idle time near hotspot,Demand category,Idle category
+thannisandra,mantri webcity,webcity,13.07119,77.64745,0,0,0.0,Yes,No
+nagasandra,jindal city,chikkabidarakallu metro,13.05256,77.48794,28,157,1.05,Moderate,Yes
+bagaluru prod test,thimmasandra gardens,bagalur bamboo forest,13.11479,77.72305,0,0,0.0,No,No
+koramangala,7th block,7th block devi park,12.93707,77.61852,24,23,1.13,Moderate,Moderate
+whitefield 3,dnr atmosphere,dnr atmosphere,12.96143,77.74205,102,40,1.0,Moderate,Yes
+whitefield 3,cosmopolis,cosmopolis,12.96282,77.74812,14,49,1.22,No,Yes
+segehalli,shanthi garden,shanthi ds max,13.00715,77.76275,113,23,1.0,Yes,Moderate
+whitefield 2,hope farm jn.,hope farm jn.,12.98236,77.75791,26,45,1.13,Moderate,Yes
+varthur,mhyna heights,habitat greens,12.92984,77.73997,74,405,1.78,Moderate,Yes
+singasandra,manipal county,manipal county road,12.87382,77.64271,53,79,1.01,Moderate,Yes
+whitefield 3,spectra amrutha,amruth dan layout,12.96343,77.73315,108,23,0.96,Moderate,Moderate
+sarjapur,siddapura,siddapura thomas layout,12.90047,77.70286,104,16,1.06,Moderate,Moderate
+hulimavu,arekera,mahindra windchimes,12.8874,77.59709,36,15,1.0,Moderate,Moderate
+sarjapur,suncity gloria,suncity gloria gate,12.90271,77.70679,39,39,1.13,No,Moderate
+devarabisanahalli,devarabisanahalli,devarabisanahalli,12.9247668,77.6948782,21,3,1.0,Moderate,No
+sarjapur,amblipura trinity,trinity hs2,12.91546,77.6699,25,1,1.0,No,No
+bellandur,genesis apartments,genesis apartments hs,12.922566,77.663933,12,109,1.06,No,Yes
+munnekollal,fountain square,fountain cult gym,12.95667,77.70893,29,136,0.99,Sparse,Yes
+bellandur,embassy pristine,embassy pristine hs,12.92662,77.66275,58,6,1.0,Sparse,Sparse
+bellandur,sobha jasmine,sobha jasmine hs,12.927212,77.669396,91,14,1.0,Moderate,Sparse
+munnekollal,thubarahalli,thubarahalli brentwood,12.95053,77.71758,79,62,0.97,Moderate,Yes
+hoodi,itpl hoodi,hoodi metro station,12.98897,77.71255,29,6,1.0,Moderate,Sparse
+electronic city 1,green house layout,green house layout hs1,12.85222,77.6491,15,47,1.15,No,Yes
+bagaluru prod test,puspha forest,bda,12.9133788,77.6381169,1,0,0.0,No,No
+koramangala,4th block koramangala,4th block koramangala hs,12.93244,77.62882,20,2,1.0,Moderate,No
+yelahanka,prestige garden bay,vaishnavi serene,13.12545,77.56824,0,9,1.0,No,Sparse
+hongasandra,greenage juniper,greenage gate,12.90254,77.63117,86,23,1.0,Moderate,Moderate
+varthur,panathur,panathur hs1,12.9359,77.71022,22,11,1.0,No,Sparse
+marathahalli,prestige kew gardens,kew hs,12.94568,77.67671,151,10,1.2,Yes,Sparse
+electronic city 1,godrej e-city,godrej e-city hs,12.84853,77.65278,23,38,1.0,No,Moderate
+rayasandra,parkway homes,parkway homes hs,12.86841,77.68659,47,78,1.03,Yes,Yes
+bagaluru prod test,avantika gardens,urbanvault hsr,12.9184962,77.6451342,12,0,0.0,Yes,No
+sarjapur,owners court 1,court1 play arena,12.91157,77.67662,43,9,1.0,Sparse,Sparse
+singasandra,concorde midway,concorde midway city,12.86629,77.65186,23,18,1.06,Sparse,Moderate
+indiranagar,diamond district,diamond district,12.96038,77.64143,18,32,1.0,Moderate,Moderate
+kudlu,sai meadows kudlu,sai meadows kudlu,12.88523,77.6522,38,24,1.25,Sparse,Moderate
+bellandur,orchid lakeview,orchid lakeview hs,12.93107,77.67578,18,8,1.0,No,Sparse
+kudlu,iti layout kudlu,iti layout kudlu,12.90047,77.64161,117,100,0.98,Yes,Yes
+marathahalli,divaysree 77,divyasree 77 hs,12.94855,77.69239,43,8,3.12,Yes,Sparse
+kudlu,btr garden kudlu,btr garden kudlu,12.88954,77.64847,52,54,1.2,Moderate,Yes
+hsr,sector 4 hsr,sector 4 park,12.91482,77.64226,1,0,0.0,No,No
+segehalli,sumadhura eden gardens,sumadhura aspire aurum,13.02798,77.74977,62,20,3.25,Moderate,Moderate
+varthur,chinappa layout,chinappa layout hs,12.93854,77.74488,13,4,1.0,No,No
+hsr,kudlu road,kudlu,12.89423,77.65081,12,4,1.0,Moderate,No
+mahadevapura,garudacharpalya,garudacharpalya metro,12.9934,77.70316,12,10,1.0,Yes,Sparse
+sarjapur,mana capitol,mana capitol,12.900477467293431,77.70315795691867,105,16,1.06,Moderate,Moderate
+thannisandra,sobha dream gardens,raga town,13.09682,77.64745,0,0,0.0,Yes,No
+yelahanka,godrej avenues,godrej avenues hs,13.14592,77.56967,103,18,0.89,Yes,Moderate
+hsr,sector 6 hsr,sector 6 hsr 9th main rd,12.91472,77.63519,1,0,0.0,No,No
+hsr,sector 7 hsr,sector 7 serenity hsr,12.90705,77.63252,32,12,1.0,Yes,Sparse
+electronic city 1,ajmera infinity,concorde manhattan,12.84006,77.64989,99,13,1.0,Moderate,Sparse
+sarjapur,sjr/bren/owners court new,chaai restro,12.900333002818511,77.67553579999999,119,15,1.0,Moderate,Moderate
+sarjapur,owners court 3,court3 grr serenity,12.90479,77.6789,87,3,1.0,Moderate,No
+whitefield 2,gopalan aqua,gopalan springdale road,12.97656,77.75748,67,33,0.94,Yes,Moderate
+whitefield 1,victorian view,borewell road,12.96911,77.73972,120,11,1.0,Moderate,Sparse
+mahadevapura,doddanekkundi,doddanekkudi durga petals,12.97446,77.69808,0,0,0.0,No,No
+koramangala,1st block koramangala,1st block hs1,12.92951,77.6334,19,25,1.24,Sparse,Moderate
+varthur,purvi symphony,purvi symphony hs,12.92173,77.73665,178,49,1.0,Yes,Yes
+varthur,green life,green life,12.92556,77.72805,54,15,1.0,Sparse,Moderate
+electronic city 2,prakruthi solitaire,prakruthi vishal mega mart,12.83552,77.69155,21,18,1.0,Moderate,Moderate
+hoodi,prestige nexus shantiniketan,prestige shantiniketan hs,12.98914,77.72692,12,48,0.98,No,Yes
+kudlu,purva westend,westend kudlu metro station,12.88991,77.63883,117,27,1.0,Yes,Moderate
+electronic city 1,prestige sunrise,neotown rd,12.8343,77.66416,72,11,1.0,Moderate,Sparse
+hulimavu,krishna layout,begur hulimavu rd,12.87725,77.60407,0,0,0.0,No,No
+electronic city 1,infinite city,cattery homes,12.81836,77.66534,72,19,1.05,Moderate,Moderate
+segehalli,kannamangala,kannamangala,13.01945,77.76232,53,73,1.04,Moderate,Yes
+indiranagar,100 feet road,100 feet bbmp park,12.96833,77.63855,14,1,1.0,Moderate,No
+sarjapur,astro maison,astro mantri premero,12.90765,77.69375,0,0,0.0,No,No
+hulimavu,nyanappanahalli,paramount shravanthi,12.88004,77.61601,42,34,1.03,Moderate,Moderate
+hongasandra,snn raj grandeur,snn raj grandeur hs,12.90017,77.62246,39,60,1.02,Sparse,Yes
+hulimavu,house of hiranandani,hiranandani gate,12.87633,77.61165,29,9,1.0,Moderate,Sparse
+tejaswini nagar,song of south,begur koppa road,12.86112,77.61326,15,11,1.09,Yes,Sparse
+electronic city 2,govinda palya,govindapalya bmtc depot,12.84665,77.67257,0,6,1.17,No,Sparse
+sarjapur,salarpuria new 1,keerthi regalia,12.91053,77.68496,132,29,1.0,Moderate,Moderate
+nagasandra,godrej tumkur,14th avenue,13.05002,77.48938,0,0,0.0,No,No
+hennur,windgates,clover apt.,13.03206,77.65076,0,0,0.0,Yes,No
+hennur,jain heights,jain height,13.03278,77.6374,0,0,0.0,Yes,No
+yeswanthpur,sattva opus,sattva opus hs1,13.04432,77.50898,31,121,1.08,Sparse,Yes
+electronic city 1,shriram summit,sipani hs,12.83972,77.66912,63,4,1.0,Moderate,No
+koramangala,6th block,6th block play ground,12.94093,77.62071,23,8,1.0,Moderate,Sparse
+thannisandra,santorini sobha city,sobha city road,13.07724,77.637,0,0,0.0,Yes,No
+hulimavu,mico layout,1st main,12.88794,77.59171,30,10,0.9,Moderate,Sparse
+sarjapur,rainbow residency,dsr woodwinds new,12.90973,77.68735,60,24,1.5,Sparse,Moderate
+sarjapur,pfr new,kpn fresh,12.897864,77.658318,32,2,1.0,No,No
+bellandur,ncc nagarjuna woods,pembrookhs1,12.9384005,77.6988346,66,8,1.0,Moderate,Sparse
+marathahalli,ironhill,ironhill hs,12.95428,77.69805,0,0,0.0,No,No
+bellandur,bellandur railway,bellandur railway hs,12.93733,77.70214,70,4,1.0,Moderate,No
+hebbal,siroya environ,siroya environ park,13.03401,77.59411,10,70,2.24,Moderate,Yes
+sarjapur,salarpuria new 2,salarpuria new hood,12.91334,77.67724,27,98,0.99,No,Yes
+sarjapur,amblipura springfields,springfields hs1,12.91891,77.67292,74,4,1.0,Sparse,No
+yeswanthpur,platinum city,watch factory road,13.03451,77.53445,4,297,1.39,No,Yes
+marathahalli,vanshee richfields,10th cross,12.957,77.69794,13,6,1.0,Sparse,Sparse
+thannisandra,nikoo homes,nikoo hs2,13.08088,77.64143,121,15,1.07,Yes,Moderate
+electronic city 2,sjr fiesta homes,sjr fiesta1st main rd,12.85878,77.67433,46,18,1.33,Yes,Moderate
+sarjapur,purva skydale,purva towers,12.89345,77.66178,124,4,1.0,Moderate,No
+bellandur,sls signature,sls signature hs,12.9335,77.70095,117,4,1.25,Moderate,No
+segehalli,subhodaya laurus,subhodaya sai ashrayadham,13.00677,77.75241,55,19,0.89,Moderate,Moderate
+bellandur,prestige ivy terraces,prestige ivy terraces,12.93426,77.69823,130,8,1.12,Yes,Sparse
+hulimavu,prestige elysian,ajmera green acres,12.86822,77.5927,5,6,1.0,No,Sparse
+tejaswini nagar,prestige park square,pps park,12.84552,77.588,0,26,7.54,No,Moderate
+bellandur,sls sapphire,sls sapphire hs,12.93419,77.70351,147,33,1.0,Yes,Moderate
+kudlu,pnr felicity kudlu,pnr kudlu royal placid,12.9006,77.65544,38,7,1.0,Sparse,Sparse
+brookefield,brookefield grand view,grandview nisarga park,12.96203,77.70958,17,16,1.0,Moderate,Moderate
+varthur,sobha dream acres,sobha dream gate hs2,12.93936,77.71939,29,466,1.11,No,Yes
+indiranagar,eshwara layout,eshwara cmh park,12.97763,77.64133,4,17,1.0,No,Moderate
+electronic city 2,sobha silicon oasis,sobha silicon oasis hs,12.86783,77.66264,8,122,1.05,Sparse,Yes
+bellandur,adarsh palm north,aprh2,12.9175507,77.6906537,91,6,1.0,Moderate,Sparse
+mahalakshmi,renaissance temple bells,renaissance temple bells,13.01391,77.54943,1,11,1.18,Moderate,Sparse
+hebbal,shriram white house,malgudi park,13.02313,77.59611,36,22,0.95,Yes,Moderate
+bellandur,sakra hospital,sakra hospital,12.93257,77.683,4,6,1.0,No,Sparse
+whitefield 2,koralur,koralur slv ratnagiri,12.98017,77.769,15,3,1.0,Sparse,No
+hebbal,siroya sunshine,14th cross main road,13.0292,77.60741,5,3,1.0,No,No
+brookefield,brookfield millennium,millennium brookefield2,12.9634518,77.7158968,49,3,1.0,Yes,No
+koramangala,st johns woods,st johns woods hs,12.93005,77.60966,0,0,0.0,No,No
+whitefield 1,silver oak,shell rd,12.98241,77.75028,6,0,0.0,No,No
+yeswanthpur,golden grand,golden grand,13.02597,77.54801,114,167,1.08,Yes,Yes
+whitefield 2,nagondanahalli,nagondanahalli cascade garden,12.97428,77.76312,7,14,1.0,No,Sparse
+rayasandra,hamilton homes,ishta yoga,12.86428,77.69759,0,0,0.0,Yes,No
+hulimavu,keya spring,family park,12.88299,77.60355,0,0,0.0,No,No
+varthur,sobha dreams acres 2,sobha dreams hs1,12.93711,77.72597,155,93,1.43,Yes,Yes
+hsr,sector 1 hsr,sector 1hsr big banyan tree,12.91287,77.64916,15,1,2.0,Moderate,No
+segehalli,sobha amethyst,sobha amethyst admus,13.02959,77.76269,4,0,0.0,No,No
+yeswanthpur,vaishnavi gardenia,trends,13.04252,77.52004,54,102,1.25,Moderate,Yes
+nagasandra,sobha ruby platinum,nagasandra metro,13.04727,77.50038,67,593,1.2,Yes,Yes
+hsr,sector 2 hsr,sector 2 hsr,12.90747,77.64697,31,56,0.98,Yes,Yes
+mahadevapura,akme ballet,akme ballet rd,12.979,77.69497,3,100,1.12,Moderate,Yes
+mahalakshmi,brigade gateway,brigade gateway aslam,13.00966,77.55433,1,8,1.0,Moderate,Sparse
+whitefield 1,foyer infinity,ecc rd,12.97545,77.74321,99,80,1.14,Moderate,Yes
+brookefield,republic of whitefield,republic of whitefield,12.96672,77.72462,0,0,0.0,No,No
+whitefield 3,putamma layout,putamma parshuram road,12.96691,77.76156,0,1,1.0,No,No
+whitefield 2,white meadows,white ayanna rd meadows,12.98057,77.75769,61,7,1.14,Yes,Sparse
+bellandur,adarsh palm towers,adarsh kids kingdom rd,12.91919,77.68393,66,4,1.0,Moderate,No
+bellandur,adarsh palm south,adarsh palm south,12.91842,77.69207,50,4,1.0,Sparse,No
+bellandur,prestige silversun,prestige silversun,12.92403,77.69509,40,4,1.0,Sparse,No
+varthur,ecolife,ecolife gunjur road,12.93886,77.73093,129,27,1.52,Moderate,Moderate
+varthur,brigade utopia,utopia vishal mart,12.93448,77.74367,80,78,1.28,Moderate,Yes
+varthur,canduer signature,utopia candeur signature,12.93088,77.74221,159,31,1.0,Yes,Moderate
+electronic city 1,smondoville,smondo 2,12.82,77.66,120,6,0.83,Moderate,Sparse
+sarjapur,pfr towers,pfr towers gate,12.89826,77.66743,86,9,1.0,Moderate,Sparse
+varthur,mvr pride,ecolife mvr pride road,12.93423,77.73042,5,43,1.05,No,Yes
+sarjapur,owners court 2,owners court 2 hs2,12.90202,77.6701,166,18,1.06,Yes,Moderate
+varthur,prestige lakeside habitat,prestige gate plh,12.92895965085842,77.73985966854721,75,352,1.87,Moderate,Yes
+varthur,mynha meadows,mynha meadows hs,12.92343,77.736,58,7,1.14,Sparse,Sparse
+segehalli,shanthi garden,shanthi hs,13.0104,77.75922,18,6,1.0,No,Sparse
+sarjapur,amblipura trinity,khatey petay,12.91647,77.67328,81,84,1.87,Moderate,Yes
+bellandur,genesis apartments,suncitylane peri bake house,12.92652,77.662408,63,6,1.0,Sparse,Sparse
+hoodi,itpl hoodi,itpl hoodi,12.99238,77.71574,32,5,0.8,Moderate,Sparse
+bagaluru prod test,avantika gardens,bagalur bamboo,13.10417,77.6877,5,0,0.0,Moderate,No
+sarjapur,owners court 1,owners coart 1 hs1,12.90728,77.67573,78,31,0.97,Moderate,Moderate
+singasandra,concorde midway,concorde krishna mystiq,12.86492,77.65483,41,16,1.0,Moderate,Moderate
+hsr,sector 4 hsr,sector 4 hsr tree park,12.91038,77.64012,0,0,0.0,No,No
+sarjapur,mana capitol,mana uber verdant,12.9059,77.69728,13,10,1.0,No,Sparse
+thannisandra,sobha dream gardens,sobha entrance,13.09926,77.64186,0,0,0.0,Yes,No
+hsr,sector 6 hsr,sector 6 hsr jagrati udyana,12.91524,77.63005,5,0,0.0,Sparse,No
+electronic city 1,ajmera infinity,ajmera infinity hs1,12.84175,77.64779,176,127,1.42,Yes,Yes
+sarjapur,sjr/bren/owners court new,bren edge waters,12.90197,77.67014,164,18,1.06,Yes,Moderate
+sarjapur,owners court 3,owners court 3 hs1,12.90244,77.67605,98,16,1.0,Moderate,Moderate
+electronic city 2,prakruthi solitaire,prakruthi solitaire,12.83671,77.6947,19,6,2.33,Moderate,Sparse
+electronic city 1,prestige sunrise,shriram summit hs1,12.83554,77.66617,49,42,1.14,Sparse,Yes
+indiranagar,100 feet road,100 feet nandana palace,12.9622,77.64192,17,8,1.0,Moderate,Sparse
+sarjapur,astro maison,astro apurva elite,12.90651,77.69048,0,3,1.0,No,No
+hulimavu,house of hiranandani,ds max road,12.87537,77.61694,71,21,1.05,Yes,Moderate
+electronic city 2,govinda palya,govinda palya ec 2,12.85158,77.67632,4,8,1.0,No,Sparse
+sarjapur,salarpuria new 1,veeru apartments,12.91087,77.68092,131,17,0.94,Moderate,Moderate
+electronic city 1,shriram summit,gesture alta vista,12.83862,77.67394,9,8,1.0,No,Sparse
+sarjapur,rainbow residency,augusta grand,12.90873,77.69037,16,2,1.0,No,No
+sarjapur,pfr new,ozone evergreens,12.90968,77.66344,45,20,1.0,Sparse,Moderate
+bellandur,ncc nagarjuna woods,ncc nagarjuna woods,12.93864,77.69396,6,63,1.0,No,Yes
+sarjapur,salarpuria new 2,sattva salarpuria,12.91116,77.68301,188,35,1.09,Yes,Moderate
+sarjapur,amblipura springfields,dnr arista,12.92265,77.67457,47,36,1.06,Sparse,Moderate
+marathahalli,vanshee richfields,vanshee richfields,12.9599,77.70129,17,81,1.02,Moderate,Yes
+thannisandra,nikoo homes,nikoo hs 1,13.08469,77.64414,142,14,1.07,Yes,Sparse
+sarjapur,purva skydale,nd passion,12.89356,77.65789,115,15,1.0,Moderate,Moderate
+segehalli,subhodaya laurus,subhodaya keerthi residency,13.00754,77.75738,27,6,1.0,No,Sparse
+hulimavu,prestige elysian,prestige elysian hs,12.87322,77.59404,18,43,0.98,Sparse,Yes
+kudlu,pnr felicity kudlu,pnr kudlu,12.89648,77.65392,24,2,1.0,Sparse,No
+indiranagar,eshwara layout,eshwara indra nagar kfc,12.97936,77.63622,11,19,1.21,Sparse,Moderate
+bellandur,adarsh palm north,adarsh palm north,12.92079,77.69598,123,40,1.0,Moderate,Yes
+whitefield 2,koralur,koralur hs1,12.98408,77.77325,3,20,1.05,No,Moderate
+brookefield,brookfield millennium,millennium water tank park,12.9667,77.71573,46,5,2.0,Yes,Sparse
+whitefield 1,silver oak,silver oak,12.98213,77.74388,75,17,1.18,Moderate,Moderate
+yeswanthpur,golden grand,taj yeshwantpur,13.02767,77.54775,61,14,1.14,Moderate,Sparse
+whitefield 2,nagondanahalli,nagondanahalli mangolia aprt,12.97382,77.76692,73,5,1.0,Yes,Sparse
+rayasandra,hamilton homes,nirmala vidyalaya rd,12.8677,77.69565,0,0,0.0,Yes,No
+hsr,sector 1 hsr,1st sector hsr,12.917666643890719,77.65073286720182,15,16,1.0,Moderate,Moderate
+yeswanthpur,vaishnavi gardenia,gardenia pipe line park,13.04713,77.52033,1,12,1.0,No,Sparse
+whitefield 1,foyer infinity,lennar edifice,12.97782,77.73728,46,8,1.0,Sparse,Sparse
+whitefield 2,white meadows,prestige white meadows,12.97455,77.75098,3,6,1.0,No,Sparse
+bellandur,adarsh palm towers,adarsh palm towers,12.91704,77.68928,82,3,1.0,Moderate,No
+varthur,ecolife,balagerehs1,12.937111,77.725972,155,93,1.43,Yes,Yes
+electronic city 1,smondoville,smondoville road,12.82202,77.65786,193,21,1.1,Yes,Moderate
+sarjapur,pfr towers,pfr towers hs2,12.90373,77.66214,45,42,1.05,Sparse,Yes
+sarjapur,owners court 2,owners coart 2 hs1,12.89893,77.67496,103,27,0.96,Moderate,Moderate
+varthur,prestige lakeside habitat,prestige lakeside habitat,12.93155,77.74127,33,26,0.96,No,Moderate
+sarjapur,amblipura trinity,trinity skyline,12.91985,77.66639,30,4,1.0,No,No
+sarjapur,mana capitol,mana capitol dmart vrr fortuna,12.90448,77.70452,29,17,1.0,No,Moderate
+hsr,sector 6 hsr,sector 6 hsr bda park,12.91252,77.63061,4,0,0.0,No,No
+sarjapur,sjr/bren/owners court new,purva skywood,12.908295,77.675728,96,26,0.96,Moderate,Moderate
+electronic city 1,prestige sunrise,milan ground,12.83022,77.66395,8,8,1.0,No,Sparse
+sarjapur,salarpuria new 1,sunshine salarpuria,12.91443,77.67687,89,23,1.0,Moderate,Moderate
+electronic city 1,shriram summit,veerasandra road,12.83589,77.67004,58,4,1.0,Sparse,No
+sarjapur,rainbow residency,rainbow junnasadra,12.90842,77.68366,78,35,1.09,Moderate,Moderate
+sarjapur,pfr new,purva,12.89338,77.66177,118,3,1.0,Moderate,No
+sarjapur,salarpuria new 2,sattva signet,12.90893,77.68046,127,12,1.0,Moderate,Sparse
+sarjapur,amblipura springfields,akme harmony,12.92172,77.67175,35,3,3.67,No,No
+sarjapur,purva skydale,lake side park,12.89771,77.6614,26,2,1.0,No,No
+brookefield,brookfield millennium,millennium aecs layout,12.969394,77.711779,14,106,1.33,Sparse,Yes
+rayasandra,hamilton homes,rayasandra main rd,12.86742,77.69095,0,5,1.0,Yes,Sparse
+varthur,ecolife,ecolife balagere,12.937963,77.728752,61,43,1.07,Sparse,Yes
+sarjapur,owners court 2,century craft,12.89645,77.67806,126,3,0.67,Moderate,No
+sarjapur,amblipura trinity,trinity sjr redwoods,12.91477,77.66707,0,0,0.0,No,No
+sarjapur,sjr/bren/owners court new,oceanus monarda`,12.90726,77.67572,77,32,0.97,Moderate,Moderate
+sarjapur,pfr new,pariwar,12.898,77.66726,82,7,1.0,Moderate,Sparse
+sarjapur,pfr new,shriram woods,12.90874,77.66843,78,11,1.0,Moderate,Sparse
+sarjapur,pfr new,prestige,12.90358,77.66278,87,48,1.08,Moderate,Yes

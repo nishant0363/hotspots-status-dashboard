@@ -12,19 +12,16 @@
             background: #f5f5f5;
         }
 
-        h2 {
-            margin-top: 40px;
-        }
-
         table {
             border-collapse: collapse;
             margin-top: 10px;
             background: white;
+            width: 100%;
         }
 
         th, td {
             border: 1px solid #ccc;
-            padding: 8px 12px;
+            padding: 6px;
             text-align: center;
             cursor: pointer;
         }
@@ -38,15 +35,6 @@
             background: #e3f2fd;
         }
 
-        #details {
-            margin-top: 30px;
-        }
-
-        .card {
-            background: white;
-            padding: 15px;
-            border-radius: 8px;
-        }
         #map-container {
             width: 100%;
             height: 500px;
@@ -57,7 +45,55 @@
             width: 100%;
             height: 100%;
             border: none;
-            border-radius: 10px;
+        }
+
+        .grid {
+            display: flex;
+            gap: 20px;
+        }
+
+        .left { flex: 1; }
+        .right { flex: 1; }
+        .card {
+            background: white;
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .card0 {
+            background: white;
+            width: 60%;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            max-height: 265px;
+        }
+
+        .card2 {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        #summary-container {
+            width: 100%;
+            overflow-x: auto;
+            max-height: 195px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+        }
+
+        #summary-container table {
+            min-width: 800px;
+            white-space: nowrap;
+        }
+
+        #summary-container th {
+            position: sticky;
+            top: 0;
+            background: #333;
         }
     </style>
 </head>
@@ -65,118 +101,245 @@
 <body>
 
 <h1>📊 Hotspot Analysis Dashboard</h1>
-<h2>🗺️ Bangalore Demand Map</h2>
 
+<h2>🗺️ Bangalore Demand Map</h2>
 <div id="map-container">
     <iframe src="map.html"></iframe>
 </div>
-<h2>1️⃣ Demand vs Idle Category Matrix</h2>
-<div id="matrix"></div>
 
-<h2>2️⃣ Aggregated Yes/No Table</h2>
-<div id="binary"></div>
+<h3>🎯 Filter by Cluster</h3>
+<select id="clusterFilter" onchange="applyFilter()">
+    <option value="ALL">All</option>
+</select>
 
-<div id="details" class="card">
-    <h2>🔍 Selected Data</h2>
+<div class="grid">
+
+    <div class="left">
+
+        <div class="card">
+            <h3>Demand vs Idle Supply Matrix</h3>
+            <div id="matrix"></div>
+        </div>
+
+        <div class="card">
+            <h3>Aggregated Yes/No</h3>
+            <div id="binary"></div>
+        </div>
+
+    </div>
+
+    <div class="right">
+
+        <div class="card0">
+            <h3>📘 Interpretation</h3>
+    <table>
+        <tr>
+            <th>Data Generation</th>
+            <th>Normalization & Classification</th>
+        </tr>
+
+        <tr>
+            <td>
+                • Each hotspot is evaluated within ~150m radius<br>
+                • <b>Demand</b> = number of orders near the hotspot<br>
+                • <b>Idle Supply</b> = number of idle experts near the hotspot<br>
+                • <b>Avg Idle Time</b> = average idle time of experts within radius<br>
+
+                • Computed using geo-distance (Haversine method)
+            </td>
+
+            <td>
+                • Sarjapur used as baseline cluster<br>
+                • Median demand per hotspot calculated for each cluster<br>
+                • Scaling factor = (cluster median / Sarjapur median)<br>
+                • Thresholds dynamically scaled using this factor<br>
+                • Categories assigned:<br>
+                No → Sparse → Moderate → Yes<br>
+
+                • Ensures fair comparison across clusters with different densities
+            </td>
+        </tr>
+    </table>
+        </div>
+
+        <div class="card0">
+            <h3>Cluster Scaling Summary</h3>
+            <div id="summary-container">
+                <div id="summary"></div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="card2">
+    <h3>🔍 Selected Data</h3>
     <table id="detailTable"></table>
 </div>
 
 <script>
 
 let fullData = [];
+let filteredData = [];
+let summaryData = [];
+let binarySubsets = {};
 
 const categories = ["Yes", "Moderate", "Sparse", "No"];
 
-// ------------------------------
-// LOAD CSV
-// ------------------------------
+// LOAD MAIN
 Papa.parse("hotspot_analysis_updated.csv", {
     download: true,
     header: true,
     complete: function(results) {
-        fullData = results.data;
-        buildMatrix();
-        buildBinary();
+        fullData = results.data.filter(d => d["cluster"]);
+        filteredData = fullData;
+        populateClusters();
+        buildAll();
     }
 });
 
-// ------------------------------
-// MATRIX TABLE
-// ------------------------------
+// LOAD SUMMARY
+Papa.parse("cluster_scaling_summary.csv", {
+    download: true,
+    header: true,
+    complete: function(results) {
+        summaryData = results.data;
+        buildSummary();
+    }
+});
+
+function populateClusters() {
+    let clusters = [...new Set(fullData.map(d => d["cluster"]))].sort();
+    let dropdown = document.getElementById("clusterFilter");
+
+    clusters.forEach(c => {
+        dropdown.innerHTML += `<option value="${c}">${c}</option>`;
+    });
+}
+
+function applyFilter() {
+    let selected = document.getElementById("clusterFilter").value;
+
+    filteredData = selected === "ALL"
+        ? fullData
+        : fullData.filter(d => d["cluster"] === selected);
+
+    buildAll();
+    buildSummary();
+    document.getElementById("detailTable").innerHTML = "";
+}
+
+function buildAll() {
+    buildMatrix();
+    buildBinary();
+}
+function showRowTotal(demand) {
+    let subset = filteredData.filter(d =>
+        d["Demand category"] === demand
+    );
+    renderTable(subset);
+}
+
+function showColTotal(idle) {
+    let subset = filteredData.filter(d =>
+        d["Idle category"] === idle
+    );
+    renderTable(subset);
+}
+
+function showAllData() {
+    renderTable(filteredData);
+}
+
+// MATRIX
 function buildMatrix() {
 
-    let table = "<table><tr><th>Demand \\ Idle</th>";
-
+    let table = "<table><tr><th>Demand \\ Idle Supply</th>";
     categories.forEach(c => table += `<th>${c}</th>`);
     table += "<th>Total</th></tr>";
 
-    categories.forEach(demand => {
+    let colTotals = { Yes:0, Moderate:0, Sparse:0, No:0 };
+    let grandTotal = 0;
 
-        table += `<tr><th>${demand}</th>`;
+    categories.forEach(d => {
+        table += `<tr><th>${d}</th>`;
         let rowTotal = 0;
 
-        categories.forEach(idle => {
-
-            let subset = fullData.filter(d =>
-                d["Demand category"] === demand &&
-                d["Idle category"] === idle
+        categories.forEach(i => {
+            let subset = filteredData.filter(x =>
+                x["Demand category"] === d &&
+                x["Idle category"] === i
             );
 
             let count = subset.length;
             rowTotal += count;
+            colTotals[i] += count;
 
-            table += `<td onclick="showData('${demand}','${idle}')">${count}</td>`;
+            table += `<td onclick="showData('${d}','${i}')">${count}</td>`;
         });
 
-        table += `<td>${rowTotal}</td></tr>`;
+        grandTotal += rowTotal;
+        table += `<td onclick="showRowTotal('${d}')"><b>${rowTotal}</b></td></tr>`;
     });
 
-    // column total
     table += "<tr><th>Total</th>";
 
-    categories.forEach(idle => {
-        let colTotal = fullData.filter(d => d["Idle category"] === idle).length;
-        table += `<td>${colTotal}</td>`;
+    categories.forEach(c => {
+        table += `<td onclick="showColTotal('${c}')"><b>${colTotals[c]}</b></td>`;
     });
 
-    table += `<td>${fullData.length}</td></tr>`;
+    table += `<td onclick="showAllData()"><b>${grandTotal}</b></td></tr>`;
+
     table += "</table>";
 
     document.getElementById("matrix").innerHTML = table;
 }
 
-// ------------------------------
-// BINARY TABLE
-// ------------------------------
+// BINARY
+function isYes(x) {
+    return x === "Yes" || x === "Moderate";
+}
+
 function buildBinary() {
 
-    function isYes(x) {
-        return x === "Yes";
-    }
+    binarySubsets = {
+        yy: filteredData.filter(d => isYes(d["Demand category"]) && isYes(d["Idle category"])),
+        yn: filteredData.filter(d => isYes(d["Demand category"]) && !isYes(d["Idle category"])),
+        ny: filteredData.filter(d => !isYes(d["Demand category"]) && isYes(d["Idle category"])),
+        nn: filteredData.filter(d => !isYes(d["Demand category"]) && !isYes(d["Idle category"]))
+    };
 
-    let yesYes = fullData.filter(d => isYes(d["Demand category"]) && isYes(d["Idle category"]));
-    let yesNo = fullData.filter(d => isYes(d["Demand category"]) && !isYes(d["Idle category"]));
-    let noYes = fullData.filter(d => !isYes(d["Demand category"]) && isYes(d["Idle category"]));
-    let noNo = fullData.filter(d => !isYes(d["Demand category"]) && !isYes(d["Idle category"]));
+    let yy = binarySubsets.yy.length;
+    let yn = binarySubsets.yn.length;
+    let ny = binarySubsets.ny.length;
+    let nn = binarySubsets.nn.length;
+
+    let rowYes = yy + yn;
+    let rowNo = ny + nn;
+    let colYes = yy + ny;
+    let colNo = yn + nn;
 
     let table = `
         <table>
-            <tr>
-                <th></th>
-                <th>Idle YES</th>
-                <th>Idle NO</th>
-            </tr>
-
+            <tr><th></th><th>Idle Supply YES</th><th>Idle Supply NO</th><th>Total</th></tr>
             <tr>
                 <th>Demand YES</th>
-                <td onclick="showBinary('yy')">${yesYes.length}</td>
-                <td onclick="showBinary('yn')">${yesNo.length}</td>
+                <td onclick="showBinary('yy')">${yy}</td>
+                <td onclick="showBinary('yn')">${yn}</td>
+                <td><b>${rowYes}</b></td>
             </tr>
-
             <tr>
                 <th>Demand NO</th>
-                <td onclick="showBinary('ny')">${noYes.length}</td>
-                <td onclick="showBinary('nn')">${noNo.length}</td>
+                <td onclick="showBinary('ny')">${ny}</td>
+                <td onclick="showBinary('nn')">${nn}</td>
+                <td><b>${rowNo}</b></td>
+            </tr>
+            <tr>
+                <th>Total</th>
+                <td><b>${colYes}</b></td>
+                <td><b>${colNo}</b></td>
+                <td><b>${rowYes + rowNo}</b></td>
             </tr>
         </table>
     `;
@@ -184,46 +347,30 @@ function buildBinary() {
     document.getElementById("binary").innerHTML = table;
 }
 
-// ------------------------------
-// SHOW DATA (MATRIX)
-// ------------------------------
-function showData(demand, idle) {
+function showBinary(key) {
+    renderTable(binarySubsets[key] || []);
+}
 
-    let subset = fullData.filter(d =>
+// DETAIL
+function showData(demand, idle) {
+    let subset = filteredData.filter(d =>
         d["Demand category"] === demand &&
         d["Idle category"] === idle
     );
-
     renderTable(subset);
 }
 
-// ------------------------------
-// SHOW DATA (BINARY)
-// ------------------------------
-function showBinary(type) {
-
-    function isYes(x) {
-        return x === "Yes";
-    }
-
-    let subset = [];
-
-    if (type === "yy") subset = fullData.filter(d => isYes(d["Demand category"]) && isYes(d["Idle category"]));
-    if (type === "yn") subset = fullData.filter(d => isYes(d["Demand category"]) && !isYes(d["Idle category"]));
-    if (type === "ny") subset = fullData.filter(d => !isYes(d["Demand category"]) && isYes(d["Idle category"]));
-    if (type === "nn") subset = fullData.filter(d => !isYes(d["Demand category"]) && !isYes(d["Idle category"]));
-
-    renderTable(subset);
-}
-
-// ------------------------------
-// RENDER DETAIL TABLE
-// ------------------------------
 function renderTable(data) {
 
     if (data.length === 0) {
-        document.getElementById("detailTable").innerHTML = "<tr><td>No Data</td></tr>";
+        document.getElementById("detailTable").innerHTML = "No Data";
         return;
+    }
+
+    let selected = document.getElementById("clusterFilter").value;
+
+    if (selected === "ALL") {
+        data = data.sort((a,b) => a.cluster.localeCompare(b.cluster));
     }
 
     let keys = Object.keys(data[0]);
@@ -239,6 +386,32 @@ function renderTable(data) {
     });
 
     document.getElementById("detailTable").innerHTML = table;
+}
+
+// SUMMARY
+function buildSummary() {
+
+    let selected = document.getElementById("clusterFilter").value;
+
+    let data = selected === "ALL"
+        ? summaryData
+        : summaryData.filter(d => d["cluster"] === selected);
+
+    let keys = Object.keys(data[0]);
+
+    let table = "<table><tr>";
+    keys.forEach(k => table += `<th>${k}</th>`);
+    table += "</tr>";
+
+    data.forEach(row => {
+        table += "<tr>";
+        keys.forEach(k => table += `<td>${row[k]}</td>`);
+        table += "</tr>";
+    });
+
+    table += "</table>";
+
+    document.getElementById("summary").innerHTML = table;
 }
 
 </script>
